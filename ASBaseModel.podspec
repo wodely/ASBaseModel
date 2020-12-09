@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ASBaseModel'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '基础model'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
    基础model 含page
                        DESC
 
-  s.homepage         = 'https://github.com/liukecyl@163.com/ASBaseModel'
+  s.homepage         = 'https://github.com/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liukecyl@163.com' => 'liukecyl@163.com' }
