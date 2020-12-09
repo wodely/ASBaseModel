@@ -1,0 +1,6 @@
+framework module ASBaseModel {
+  umbrella header "ASBaseModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

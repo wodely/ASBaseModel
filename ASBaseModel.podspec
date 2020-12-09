@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ASBaseModel'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ASBaseModel.'
+  s.summary          = '基础model'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+   基础model 含page
                        DESC
 
   s.homepage         = 'https://github.com/liukecyl@163.com/ASBaseModel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liukecyl@163.com' => 'liukecyl@163.com' }
-  s.source           = { :git => 'https://github.com/liukecyl@163.com/ASBaseModel.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wodely/ASBaseModel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ASBaseModel/Classes/**/*'
   
@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'FMDB', '~> 2.7.5'
+   s.dependency 'Realm','~> 5.3.1'
 end

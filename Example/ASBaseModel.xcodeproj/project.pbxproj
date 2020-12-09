@@ -58,15 +58,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		686761F0107408CAD396A55E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		686761F0107408CAD396A55E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		814AB6D580D2B72FF7FE2A0E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		814AB6D580D2B72FF7FE2A0E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92662FC77E91555B999911E8 /* Pods-ASBaseModel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASBaseModel_Example.release.xcconfig"; path = "Target Support Files/Pods-ASBaseModel_Example/Pods-ASBaseModel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		94E5D35592395D10F2DD58AD /* Pods_ASBaseModel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASBaseModel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64F954315B83BE929F91053 /* Pods_ASBaseModel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASBaseModel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39FA717AF5A2A7A562597B5 /* Pods-ASBaseModel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASBaseModel_Example.debug.xcconfig"; path = "Target Support Files/Pods-ASBaseModel_Example/Pods-ASBaseModel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F1C0B37EF14A115F7C3CB1FA /* ASBaseModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ASBaseModel.podspec; path = ../ASBaseModel.podspec; sourceTree = "<group>"; };
+		F1C0B37EF14A115F7C3CB1FA /* ASBaseModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ASBaseModel.podspec; path = ../ASBaseModel.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				33868B28567473724E400578 /* Pods-ASBaseModel_Tests.debug.xcconfig */,
 				4BBEB186E12DE1FF568EF6D6 /* Pods-ASBaseModel_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "liukecyl@163.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = TU5L2H2C9P;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -325,10 +328,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ASBaseModel_Example/Pods-ASBaseModel_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ASBaseModel/ASBaseModel.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ASBaseModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,6 +501,7 @@
 			baseConfigurationReference = C39FA717AF5A2A7A562597B5 /* Pods-ASBaseModel_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TU5L2H2C9P;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASBaseModel/ASBaseModel-Prefix.pch";
 				INFOPLIST_FILE = "ASBaseModel/ASBaseModel-Info.plist";
@@ -510,6 +518,7 @@
 			baseConfigurationReference = 92662FC77E91555B999911E8 /* Pods-ASBaseModel_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TU5L2H2C9P;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASBaseModel/ASBaseModel-Prefix.pch";
 				INFOPLIST_FILE = "ASBaseModel/ASBaseModel-Info.plist";

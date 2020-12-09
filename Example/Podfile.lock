@@ -1,0 +1,31 @@
+PODS:
+  - ASBaseModel (0.1.0):
+    - FMDB (~> 2.7.5)
+    - Realm (~> 5.3.1)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Realm (5.3.6):
+    - Realm/Headers (= 5.3.6)
+  - Realm/Headers (5.3.6)
+
+DEPENDENCIES:
+  - ASBaseModel (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - Realm
+
+EXTERNAL SOURCES:
+  ASBaseModel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ASBaseModel: 5896b9b5e41d193f578d1f267d47c5006a19289f
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Realm: cd400dd7e5b5bb5c8ae9842eecd73792369e6ec0
+
+PODFILE CHECKSUM: fb552cfedb6f421b3eeefe4a6bae6a439efe0a29
+
+COCOAPODS: 1.10.0

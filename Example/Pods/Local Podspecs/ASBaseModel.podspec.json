@@ -1,0 +1,30 @@
+{
+  "name": "ASBaseModel",
+  "version": "0.1.0",
+  "summary": "基础model",
+  "description": "基础model 含page",
+  "homepage": "https://github.com/liukecyl@163.com/ASBaseModel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liukecyl@163.com": "liukecyl@163.com"
+  },
+  "source": {
+    "git": "https://github.com/wodely/ASBaseModel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ASBaseModel/Classes/**/*",
+  "dependencies": {
+    "FMDB": [
+      "~> 2.7.5"
+    ],
+    "Realm": [
+      "~> 5.3.1"
+    ]
+  }
+}
