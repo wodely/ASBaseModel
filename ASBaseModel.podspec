@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
    基础model 含page
                        DESC
 
-  s.homepage         = 'https://github.com/'
+  s.homepage         = 'https://github.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liukecyl@163.com' => 'liukecyl@163.com' }
