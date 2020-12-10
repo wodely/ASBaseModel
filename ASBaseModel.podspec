@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ASBaseModel'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = '基础model'
 
 # This description is used to generate tags and improve search results.
